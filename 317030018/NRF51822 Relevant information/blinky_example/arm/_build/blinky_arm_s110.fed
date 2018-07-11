@@ -1,0 +1,14 @@
+;#<FEEDBACK># ARM Linker, 5.02 [Build 28]: Last Updated: Tue Nov 13 08:54:24 2012
+;VERSION 0.2
+;FILE main.o
+__asm___6_main_c_main____REV16 <= USED 0
+__asm___6_main_c_main____REVSH <= USED 0
+__asm___6_main_c_main__nrf_delay_us <= USED 0
+;FILE nrf_delay.o
+__asm___11_nrf_delay_c_532987f3____REV16 <= USED 0
+__asm___11_nrf_delay_c_532987f3____REVSH <= USED 0
+;FILE startup_arm_nrf51.o
+;FILE system_nrf51.o
+SystemCoreClockUpdate <= USED 0
+__asm___14_system_nrf51_c_5d646a67____REV16 <= USED 0
+__asm___14_system_nrf51_c_5d646a67____REVSH <= USED 0

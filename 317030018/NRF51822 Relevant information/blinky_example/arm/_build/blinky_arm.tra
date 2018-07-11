@@ -1,0 +1,23 @@
+*** Creating Trace Output File '.\_build\blinky_arm.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\_build\main.o"'
+### List of Objects: adding '".\_build\startup_arm_nrf51.o"'
+### List of Objects: adding '".\_build\system_nrf51.o"'
+### List of Objects: adding '".\_build\nrf_delay.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M0 ".\_build\main.o" ".\_build\startup_arm_nrf51.o" ".\_build\system_nrf51.o" ".\_build\nrf_delay.o" 
+--library_type=microlib --strict --scatter ".\_build\blinky_arm.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\_build\blinky_arm.map" -o .\_build\blinky_arm.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\_build\blinky_arm.axf'
+### ADS-LD Command File: '.\_build\blinky_arm.l2p'
+### Checking for dirty Components...
+### Creating CmdFile '.\_build\blinky_arm.l2p', Handle=0x000001BC
+### Writing '.lnp' file
+### ADS-LD Command file '.\_build\blinky_arm.l2p' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

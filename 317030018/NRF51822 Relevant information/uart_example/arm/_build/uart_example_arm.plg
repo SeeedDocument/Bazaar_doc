@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Keil\ARM\Device\Nordic\nrf51822\Board\pca10001\uart_example\arm\uart_example.uvproj
+Project File Date:  09/20/2012
+
+<h2>Output:</h2>
+Build target 'nRF51822'
+compiling main.c...
+--- Error: failed to execute '.\ARMCC\bin\ArmCC'
+Target not created
+Build target 'nRF51822'
+compiling main.c...
+--- Error: failed to execute '.\ARMCC\bin\ArmCC'
+Target not created
+Build target 'nRF51822'
+compiling main.c...
+--- Error: failed to execute '.\ARMCC\bin\ArmCC'
+Target not created
+Build target 'nRF51822'
+compiling main.c...
+--- Error: failed to execute '.\ARMCC\bin\ArmCC'
+Target not created
+Build target 'nRF51822'
+compiling main.c...
+--- Error: failed to execute '.\ARMCC\bin\ArmCC'
+Target not created

@@ -1,0 +1,5 @@
+--cpu Cortex-M0 ".\_build\main_tx.o" ".\_build\radio_config.o" ".\_build\startup_arm_nrf51.o" ".\_build\system_nrf51.o" ".\_build\simple_uart.o" ".\_build\nrf_delay.o" 
+--library_type=microlib --strict --scatter ".\_build\button_radio_tx_example.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\_build\button_radio_tx_example.map" -o .\_build\button_radio_tx_example.axf

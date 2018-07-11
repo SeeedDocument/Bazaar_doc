@@ -1,0 +1,260 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\_build\button_radio_tx_example.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\_build\button_radio_tx_example.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.02 [Build 28]: Last Updated: Tue Nov 13 16:59:03 2012
+<BR><P>
+<H3>Maximum Stack Usage =         40 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; init &rArr; radio_configure &rArr; nrf_delay_ms
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[1]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NMI_Handler</a><BR>
+ <LI><a href="#[2]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2]">HardFault_Handler</a><BR>
+ <LI><a href="#[3]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">SVC_Handler</a><BR>
+ <LI><a href="#[4]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[4]">PendSV_Handler</a><BR>
+ <LI><a href="#[5]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">SysTick_Handler</a><BR>
+ <LI><a href="#[c]">ADC_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[c]">ADC_IRQHandler</a><BR>
+ <LI><a href="#[23]">__asm___11_nrf_delay_c_532987f3__nrf_delay_us</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[23]">__asm___11_nrf_delay_c_532987f3__nrf_delay_us</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[c]">ADC_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[14]">CCM_AAR_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[13]">ECB_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[b]">GPIOTE_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[6]">POWER_CLOCK_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[4]">PendSV_Handler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[17]">QDEC_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[7]">RADIO_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[12]">RNG_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[10]">RTC0_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[16]">RTC1_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[9]">SPI0_TWI0_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[a]">SPI1_TWI1_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[3]">SVC_Handler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[18]">SWI0_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[19]">SWI1_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[1a]">SWI2_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[1b]">SWI3_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[1c]">SWI4_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[1d]">SWI5_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[5]">SysTick_Handler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[1f]">SystemInit</a> from system_nrf51.o(i.SystemInit) referenced from startup_arm_nrf51.o(.text)
+ <LI><a href="#[11]">TEMP_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[d]">TIMER0_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[e]">TIMER1_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[f]">TIMER2_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[8]">UART0_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[15]">WDT_IRQHandler</a> from startup_arm_nrf51.o(.text) referenced from startup_arm_nrf51.o(RESET)
+ <LI><a href="#[20]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_arm_nrf51.o(.text)
+ <LI><a href="#[1e]">main</a> from main_tx.o(i.main) referenced from entry8.o(.ARM.Collect$$$$00000009)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[20]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(.text)
+</UL>
+<P><STRONG><a name="[29]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[21]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[24]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[2a]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[2b]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8.o(.ARM.Collect$$$$00000009))
+
+<P><STRONG><a name="[23]"></a>__asm___11_nrf_delay_c_532987f3__nrf_delay_us</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, nrf_delay.o(.emb_text))
+<BR><BR>[Calls]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_nrf_delay_c_532987f3__nrf_delay_us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_nrf_delay_c_532987f3__nrf_delay_us
+<LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_delay_ms
+</UL>
+
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>ADC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>CCM_AAR_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>ECB_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>GPIOTE_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>POWER_CLOCK_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>QDEC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>RADIO_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>RNG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>RTC0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>RTC1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>SPI0_TWI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>SPI1_TWI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>SWI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>SWI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>SWI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>SWI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>SWI4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>SWI5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>TEMP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>TIMER0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>TIMER1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>TIMER2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>UART0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>WDT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_arm_nrf51.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[2c]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f]"></a>SystemInit</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, system_nrf51.o(i.SystemInit))
+<BR>[Address Reference Count : 1]<UL><LI> startup_arm_nrf51.o(.text)
+</UL>
+<P><STRONG><a name="[2d]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[2e]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[2f]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[25]"></a>init</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, main_tx.o(i.init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = init &rArr; radio_configure &rArr; nrf_delay_ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_configure
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1e]"></a>main</STRONG> (Thumb, 148 bytes, Stack size 8 bytes, main_tx.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = main &rArr; init &rArr; radio_configure &rArr; nrf_delay_ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+<LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_gpio_pin_read
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry8.o(.ARM.Collect$$$$00000009)
+</UL>
+<P><STRONG><a name="[28]"></a>nrf_delay_ms</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, nrf_delay.o(i.nrf_delay_ms))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = nrf_delay_ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___11_nrf_delay_c_532987f3__nrf_delay_us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_configure
+</UL>
+
+<P><STRONG><a name="[26]"></a>radio_configure</STRONG> (Thumb, 106 bytes, Stack size 8 bytes, radio_config.o(i.radio_configure))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = radio_configure &rArr; nrf_delay_ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nrf_delay_ms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[27]"></a>nrf_gpio_pin_read</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, main_tx.o(i.nrf_gpio_pin_read))
+<BR><BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

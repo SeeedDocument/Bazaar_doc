@@ -1,0 +1,294 @@
+ARM Linker, 5.02 [Build 28] [MDK-ARM Lite]
+
+==============================================================================
+
+Section Cross References
+
+    main_rx.o(i.init) refers to radio_config.o(i.radio_configure) for radio_configure
+    main_rx.o(i.main) refers to main_rx.o(i.init) for init
+    main_rx.o(i.main) refers to main_rx.o(i.nrf_gpio_pin_clear) for nrf_gpio_pin_clear
+    main_rx.o(i.main) refers to main_rx.o(i.nrf_gpio_pin_set) for nrf_gpio_pin_set
+    main_rx.o(i.main) refers to main_rx.o(.data) for packet_tx
+    radio_config.o(i.radio_configure) refers to nrf_delay.o(i.nrf_delay_ms) for nrf_delay_ms
+    startup_arm_nrf51.o(RESET) refers to startup_arm_nrf51.o(STACK) for __initial_sp
+    startup_arm_nrf51.o(RESET) refers to startup_arm_nrf51.o(.text) for Reset_Handler
+    startup_arm_nrf51.o(.text) refers to system_nrf51.o(i.SystemInit) for SystemInit
+    startup_arm_nrf51.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_nrf51.o(i.SystemCoreClockUpdate) refers to system_nrf51.o(.data) for SystemCoreClock
+    simple_uart.o(i.simple_uart_config) refers to simple_uart.o(i.nrf_gpio_cfg_output) for nrf_gpio_cfg_output
+    simple_uart.o(i.simple_uart_config) refers to simple_uart.o(i.nrf_gpio_cfg_input) for nrf_gpio_cfg_input
+    simple_uart.o(i.simple_uart_get_with_timeout) refers to simple_uart.o(.emb_text) for __asm___13_simple_uart_c_5dda6715__nrf_delay_us
+    simple_uart.o(i.simple_uart_putstring) refers to simple_uart.o(i.simple_uart_put) for simple_uart_put
+    nrf_delay.o(i.nrf_delay_ms) refers to nrf_delay.o(.emb_text) for __asm___11_nrf_delay_c_532987f3__nrf_delay_us
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8.o(.ARM.Collect$$$$00000009) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_arm_nrf51.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_arm_nrf51.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry8.o(.ARM.Collect$$$$00000009) refers to main_rx.o(i.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing main_rx.o(.rev16_text), (4 bytes).
+    Removing main_rx.o(.revsh_text), (4 bytes).
+    Removing radio_config.o(.rev16_text), (4 bytes).
+    Removing radio_config.o(.revsh_text), (4 bytes).
+    Removing radio_config.o(.emb_text), (30 bytes).
+    Removing startup_arm_nrf51.o(HEAP), (2048 bytes).
+    Removing system_nrf51.o(.rev16_text), (4 bytes).
+    Removing system_nrf51.o(.revsh_text), (4 bytes).
+    Removing system_nrf51.o(i.SystemCoreClockUpdate), (16 bytes).
+    Removing system_nrf51.o(.data), (4 bytes).
+    Removing simple_uart.o(.rev16_text), (4 bytes).
+    Removing simple_uart.o(.revsh_text), (4 bytes).
+    Removing simple_uart.o(.emb_text), (30 bytes).
+    Removing simple_uart.o(i.nrf_gpio_cfg_input), (20 bytes).
+    Removing simple_uart.o(i.nrf_gpio_cfg_output), (18 bytes).
+    Removing simple_uart.o(i.simple_uart_config), (140 bytes).
+    Removing simple_uart.o(i.simple_uart_get), (32 bytes).
+    Removing simple_uart.o(i.simple_uart_get_with_timeout), (72 bytes).
+    Removing simple_uart.o(i.simple_uart_put), (32 bytes).
+    Removing simple_uart.o(i.simple_uart_putstring), (32 bytes).
+    Removing nrf_delay.o(.rev16_text), (4 bytes).
+    Removing nrf_delay.o(.revsh_text), (4 bytes).
+
+22 unused section(s) (total 2514 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  startup_arm_nrf51.o(RESET)
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ..\..\..\..\Source\nrf_delay\nrf_delay.c 0x00000000   Number         0  nrf_delay.o ABSOLUTE
+    ..\..\..\..\Source\simple_uart\simple_uart.c 0x00000000   Number         0  simple_uart.o ABSOLUTE
+    ..\..\..\..\Source\templates\arm\arm_startup_nrf51.s 0x00000000   Number         0  startup_arm_nrf51.o ABSOLUTE
+    ..\..\..\..\Source\templates\system_nrf51.c 0x00000000   Number         0  system_nrf51.o ABSOLUTE
+    ..\\..\\..\\..\\Source\\nrf_delay\\nrf_delay.c 0x00000000   Number         0  nrf_delay.o ABSOLUTE
+    ..\\..\\..\\..\\Source\\simple_uart\\simple_uart.c 0x00000000   Number         0  simple_uart.o ABSOLUTE
+    ..\\..\\..\\..\\Source\\templates\\system_nrf51.c 0x00000000   Number         0  system_nrf51.o ABSOLUTE
+    ..\\main_rx.c                            0x00000000   Number         0  main_rx.o ABSOLUTE
+    ..\\radio_config.c                       0x00000000   Number         0  radio_config.o ABSOLUTE
+    ..\main_rx.c                             0x00000000   Number         0  main_rx.o ABSOLUTE
+    ..\radio_config.c                        0x00000000   Number         0  radio_config.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x000000c0   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x000000c0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x000000c4   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x000000c8   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$00000009                 0x000000c8   Section        8  entry8.o(.ARM.Collect$$$$00000009)
+    .ARM.Collect$$$$00002712                 0x000000d0   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x000000d0   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .emb_text                                0x000000d4   Section       30  nrf_delay.o(.emb_text)
+    .text                                    0x000000f4   Section       28  startup_arm_nrf51.o(.text)
+    .text                                    0x00000110   Section       36  init.o(.text)
+    i.SystemInit                             0x00000134   Section        0  system_nrf51.o(i.SystemInit)
+    i.__scatterload_copy                     0x00000148   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00000156   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00000158   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.init                                   0x00000168   Section        0  main_rx.o(i.init)
+    i.main                                   0x000001a8   Section        0  main_rx.o(i.main)
+    i.nrf_delay_ms                           0x000002c0   Section        0  nrf_delay.o(i.nrf_delay_ms)
+    i.nrf_gpio_pin_clear                     0x000002d8   Section        0  main_rx.o(i.nrf_gpio_pin_clear)
+    nrf_gpio_pin_clear                       0x000002d9   Thumb Code    10  main_rx.o(i.nrf_gpio_pin_clear)
+    i.nrf_gpio_pin_set                       0x000002e8   Section        0  main_rx.o(i.nrf_gpio_pin_set)
+    nrf_gpio_pin_set                         0x000002e9   Thumb Code    10  main_rx.o(i.nrf_gpio_pin_set)
+    i.radio_configure                        0x000002f8   Section        0  radio_config.o(i.radio_configure)
+    .data                                    0x20000000   Section       13  main_rx.o(.data)
+    count                                    0x20000000   Data           4  main_rx.o(.data)
+    shuju                                    0x20000004   Data           1  main_rx.o(.data)
+    packet                                   0x20000005   Data           4  main_rx.o(.data)
+    packet_tx                                0x20000009   Data           4  main_rx.o(.data)
+    STACK                                    0x20000010   Section     2048  startup_arm_nrf51.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main_rx.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_arm_nrf51.o(RESET)
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    __Vectors_End                            0x000000c0   Data           0  startup_arm_nrf51.o(RESET)
+    __Vectors_Size                           0x000000c0   Number         0  startup_arm_nrf51.o ABSOLUTE
+    __main                                   0x000000c1   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x000000c1   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x000000c5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x000000c9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x000000c9   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_init                               0x000000c9   Thumb Code     0  entry8.o(.ARM.Collect$$$$00000009)
+    __asm___11_nrf_delay_c_532987f3__nrf_delay_us 0x000000d5   Thumb Code    30  nrf_delay.o(.emb_text)
+    Reset_Handler                            0x000000f5   Thumb Code     8  startup_arm_nrf51.o(.text)
+    NMI_Handler                              0x000000fd   Thumb Code     2  startup_arm_nrf51.o(.text)
+    HardFault_Handler                        0x000000ff   Thumb Code     2  startup_arm_nrf51.o(.text)
+    SVC_Handler                              0x00000101   Thumb Code     2  startup_arm_nrf51.o(.text)
+    PendSV_Handler                           0x00000103   Thumb Code     2  startup_arm_nrf51.o(.text)
+    SysTick_Handler                          0x00000105   Thumb Code     2  startup_arm_nrf51.o(.text)
+    ADC_IRQHandler                           0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    CCM_AAR_IRQHandler                       0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    ECB_IRQHandler                           0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    GPIOTE_IRQHandler                        0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    POWER_CLOCK_IRQHandler                   0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    QDEC_IRQHandler                          0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    RADIO_IRQHandler                         0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    RNG_IRQHandler                           0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    RTC0_IRQHandler                          0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    RTC1_IRQHandler                          0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    SPI0_TWI0_IRQHandler                     0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    SPI1_TWI1_IRQHandler                     0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    SWI0_IRQHandler                          0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    SWI1_IRQHandler                          0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    SWI2_IRQHandler                          0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    SWI3_IRQHandler                          0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    SWI4_IRQHandler                          0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    SWI5_IRQHandler                          0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    TEMP_IRQHandler                          0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    TIMER0_IRQHandler                        0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    TIMER1_IRQHandler                        0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    TIMER2_IRQHandler                        0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    UART0_IRQHandler                         0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    WDT_IRQHandler                           0x00000107   Thumb Code     0  startup_arm_nrf51.o(.text)
+    __scatterload                            0x00000111   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00000111   Thumb Code     0  init.o(.text)
+    SystemInit                               0x00000135   Thumb Code    14  system_nrf51.o(i.SystemInit)
+    __scatterload_copy                       0x00000149   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00000157   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00000159   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    init                                     0x00000169   Thumb Code    60  main_rx.o(i.init)
+    main                                     0x000001a9   Thumb Code   244  main_rx.o(i.main)
+    nrf_delay_ms                             0x000002c1   Thumb Code    20  nrf_delay.o(i.nrf_delay_ms)
+    radio_configure                          0x000002f9   Thumb Code   106  radio_config.o(i.radio_configure)
+    Region$$Table$$Base                      0x00000384   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000394   Number         0  anon$$obj.o(Region$$Table)
+    __initial_sp                             0x20000810   Data           0  startup_arm_nrf51.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000c1
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x000003a4, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00000394, Max: 0x00040000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Data   RO          114    RESET               startup_arm_nrf51.o
+    0x000000c0   0x00000000   Code   RO          239  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x00000004   Code   RO          242    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x00000004   Code   RO          245    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x00000000   Code   RO          247    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x00000008   Code   RO          248    .ARM.Collect$$$$00000009  mc_p.l(entry8.o)
+    0x000000d0   0x00000004   Code   RO          243    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000d4   0x0000001e   Code   RO          217    .emb_text           nrf_delay.o
+    0x000000f2   0x00000002   PAD
+    0x000000f4   0x0000001c   Code   RO          115    .text               startup_arm_nrf51.o
+    0x00000110   0x00000024   Code   RO          249    .text               mc_p.l(init.o)
+    0x00000134   0x00000014   Code   RO          122    i.SystemInit        system_nrf51.o
+    0x00000148   0x0000000e   Code   RO          253    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x00000156   0x00000002   Code   RO          254    i.__scatterload_null  mc_p.l(handlers.o)
+    0x00000158   0x0000000e   Code   RO          255    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x00000166   0x00000002   PAD
+    0x00000168   0x00000040   Code   RO            3    i.init              main_rx.o
+    0x000001a8   0x00000118   Code   RO            4    i.main              main_rx.o
+    0x000002c0   0x00000018   Code   RO          218    i.nrf_delay_ms      nrf_delay.o
+    0x000002d8   0x00000010   Code   RO            5    i.nrf_gpio_pin_clear  main_rx.o
+    0x000002e8   0x00000010   Code   RO            6    i.nrf_gpio_pin_set  main_rx.o
+    0x000002f8   0x0000008c   Code   RO           82    i.radio_configure   radio_config.o
+    0x00000384   0x00000010   Data   RO          251    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000810, Max: 0x00004000, ABSOLUTE, UNINIT)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x0000000d   Data   RW            7    .data               main_rx.o
+    0x2000000d   0x00000003   PAD
+    0x20000010   0x00000800   Zero   RW          112    STACK               startup_arm_nrf51.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       376         52          0         13          0       8502   main_rx.o
+        54          4          0          0          0       1263   nrf_delay.o
+       140         34          0          0          0        498   radio_config.o
+        28          8        192          0       2048        632   startup_arm_nrf51.o
+        20          6          0          0          0        429   system_nrf51.o
+
+    ----------------------------------------------------------------------
+       620        104        208         16       2048      11324   Object Totals
+         0          0         16          0          0          0   (incl. Generated)
+         2          0          0          3          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         8          4          0          0          0          0   entry8.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+
+    ----------------------------------------------------------------------
+        88         16          0          0          0         68   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+        86         16          0          0          0         68   mc_p.l
+
+    ----------------------------------------------------------------------
+        88         16          0          0          0         68   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       708        120        208         16       2048      11068   Grand Totals
+       708        120        208         16       2048      11068   ELF Image Totals
+       708        120        208         16          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  916 (   0.89kB)
+    Total RW  Size (RW Data + ZI Data)              2064 (   2.02kB)
+    Total ROM Size (Code + RO Data + RW Data)        932 (   0.91kB)
+
+==============================================================================
+

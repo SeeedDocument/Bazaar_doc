@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Documents and Settings\Administrator\×ÀÃæ\NRF51822×ÊÁÏ\²â¾àled_tx_rx_v1.0\²â¾àled_tx_rx_v1.0\arm\led_radio_example_rx.uvproj
+Project File Date:  11/13/2012
+
+<h2>Output:</h2>
+ 
+*** Rebuild Pass #1 with Cross-Module Feedback - 'Clean' invoked.
+Clean started: Project: 'led_radio_example_rx'
+   deleting intermediate output files for target 'nRF51822'
+Rebuild target 'nRF51822'
+compiling main_rx.c...
+..\main_rx.c(37): error:  #5: cannot open source input file "nrf_gpio.h": No such file or directory
+compiling radio_config.c...
+..\radio_config.c(14): error:  #5: cannot open source input file "nrf_delay.h": No such file or directory
+assembling startup_arm_nrf51.s...
+startup_arm_nrf51.s: error: A1023E: File "..\..\..\..\Source\templates\arm\arm_startup_nrf51.s" could not be opened: No such file or directory
+Target not created

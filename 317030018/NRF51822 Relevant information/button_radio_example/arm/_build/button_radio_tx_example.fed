@@ -1,0 +1,26 @@
+;#<FEEDBACK># ARM Linker, 5.02 [Build 28]: Last Updated: Tue Nov 13 16:59:00 2012
+;VERSION 0.2
+;FILE main_tx.o
+__asm___9_main_tx_c_init____REV16 <= USED 0
+__asm___9_main_tx_c_init____REVSH <= USED 0
+;FILE nrf_delay.o
+__asm___11_nrf_delay_c_532987f3____REV16 <= USED 0
+__asm___11_nrf_delay_c_532987f3____REVSH <= USED 0
+;FILE radio_config.o
+__asm___14_radio_config_c_b16075f8____REV16 <= USED 0
+__asm___14_radio_config_c_b16075f8____REVSH <= USED 0
+__asm___14_radio_config_c_b16075f8__nrf_delay_us <= USED 0
+;FILE simple_uart.o
+__asm___13_simple_uart_c_5dda6715____REV16 <= USED 0
+__asm___13_simple_uart_c_5dda6715____REVSH <= USED 0
+__asm___13_simple_uart_c_5dda6715__nrf_delay_us <= USED 0
+simple_uart_config <= USED 0
+simple_uart_get <= USED 0
+simple_uart_get_with_timeout <= USED 0
+simple_uart_put <= USED 0
+simple_uart_putstring <= USED 0
+;FILE startup_arm_nrf51.o
+;FILE system_nrf51.o
+SystemCoreClockUpdate <= USED 0
+__asm___14_system_nrf51_c_5d646a67____REV16 <= USED 0
+__asm___14_system_nrf51_c_5d646a67____REVSH <= USED 0

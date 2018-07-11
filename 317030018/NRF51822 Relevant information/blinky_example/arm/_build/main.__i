@@ -1,0 +1,1 @@
+-c -cpu "Cortex-M0" -D__EVAL -D__MICROLIB --li -g -O0 -apcs /interwork -zo -I..\..\..\..\Include --c99 -DNRF51 -DSETUPA -DBOARD_PCA10001 -o ".\_build\main.o" --depend ".\_build\main.d" "..\main.c"

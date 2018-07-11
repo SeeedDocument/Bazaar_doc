@@ -1,0 +1,12 @@
+Dependencies for Project 'led_radio_example_rx', Target 'nRF51822': (DO NOT MODIFY !)
+F (..\..\..\..\Source\keil_arm_uv4.lnt)(0x00000000)()
+F (..\main_rx.c)(0x50EA47F7)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\..\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -DNRF51 -DBOARD_PCA10001 -DDO_NOT_USE_DEPRECATED -o ".\_build\main_rx.o" --omf_browse ".\_build\main_rx.crf" --depend ".\_build\main_rx.d")
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h)(0x4EB0D288)
+I (..\radio_config.h)(0x50A20528)
+F (..\radio_config.c)(0x50E95662)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\..\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -DNRF51 -DBOARD_PCA10001 -DDO_NOT_USE_DEPRECATED -o ".\_build\radio_config.o" --omf_browse ".\_build\radio_config.crf" --depend ".\_build\radio_config.d")
+I (..\radio_config.h)(0x50A20528)
+F (..\..\..\..\Source\templates\arm\arm_startup_nrf51.s)(0x00000000)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1" -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include --list ".\_build\startup_arm_nrf51.lst" --xref -o ".\_build\startup_arm_nrf51.o" --depend ".\_build\startup_arm_nrf51.d")
+F (..\..\..\..\Source\templates\system_nrf51.c)(0x00000000)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\..\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -DNRF51 -DBOARD_PCA10001 -DDO_NOT_USE_DEPRECATED -o ".\_build\system_nrf51.o" --omf_browse ".\_build\system_nrf51.crf" --depend ".\_build\system_nrf51.d")
+F (..\..\..\..\Source\simple_uart\simple_uart.c)(0x00000000)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\..\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -DNRF51 -DBOARD_PCA10001 -DDO_NOT_USE_DEPRECATED -o ".\_build\simple_uart.o" --omf_browse ".\_build\simple_uart.crf" --depend ".\_build\simple_uart.d")
+F (..\..\..\..\Source\nrf_delay\nrf_delay.c)(0x00000000)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I..\..\..\..\Include --c99 -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -DNRF51 -DBOARD_PCA10001 -DDO_NOT_USE_DEPRECATED -o ".\_build\nrf_delay.o" --omf_browse ".\_build\nrf_delay.crf" --depend ".\_build\nrf_delay.d")

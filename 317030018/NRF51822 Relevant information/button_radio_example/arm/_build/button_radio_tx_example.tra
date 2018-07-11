@@ -1,0 +1,25 @@
+*** Creating Trace Output File '.\_build\button_radio_tx_example.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\_build\main_tx.o"'
+### List of Objects: adding '".\_build\radio_config.o"'
+### List of Objects: adding '".\_build\startup_arm_nrf51.o"'
+### List of Objects: adding '".\_build\system_nrf51.o"'
+### List of Objects: adding '".\_build\simple_uart.o"'
+### List of Objects: adding '".\_build\nrf_delay.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M0 ".\_build\main_tx.o" ".\_build\radio_config.o" ".\_build\startup_arm_nrf51.o" ".\_build\system_nrf51.o" ".\_build\simple_uart.o" ".\_build\nrf_delay.o" 
+--library_type=microlib --strict --scatter ".\_build\button_radio_tx_example.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\_build\button_radio_tx_example.map" -o .\_build\button_radio_tx_example.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\_build\button_radio_tx_example.axf'
+### ADS-LD Command File: '.\_build\button_radio_tx_example.l2p'
+### Checking for dirty Components...
+### Creating CmdFile '.\_build\button_radio_tx_example.l2p', Handle=0x00000260
+### Writing '.lnp' file
+### ADS-LD Command file '.\_build\button_radio_tx_example.l2p' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
